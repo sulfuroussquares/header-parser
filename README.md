@@ -19,7 +19,7 @@ header data.
 
 | Story                                                         | Completed? |
 | ------------------------------------------------------------- | ---------- |
-| I can access a landing page with a description of the service | **NO**     |
+| I can access a landing page with a description of the service | **YES**     |
 | The service provides a JSON-formatted response                | **YES**    |
 | The service provides the requester's IP address               | **YES**    |
 | The service provides the requester's language                 | **YES**    |
