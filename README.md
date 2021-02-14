@@ -20,14 +20,21 @@ header data.
 | Story                                                         | Completed? |
 | ------------------------------------------------------------- | ---------- |
 | I can access a landing page with a description of the service | **NO**     |
-| The service provides a JSON-formatted response                | **NO**     |
-| The service provides the requester's IP address               | **NO**     |
-| The service provides the requester's language                 | **NO**     |
-| The service provides the requester's browser information      | **NO**     |
+| The service provides a JSON-formatted response                | **YES**    |
+| The service provides the requester's IP address               | **YES**    |
+| The service provides the requester's language                 | **YES**    |
+| The service provides the requester's browser information      | **YES**    |
 
 ---
 
 ### Implementation
+
+This project was easier than my previous ([Timestamp Service](https://github.com/sulfuroussquares/Timestamp-Service)), mostly because this is a simple matter of returning request header
+information.
+
+To display header request information, users must navigate to the `/api/whoami` extension from wherever the project is deployed to. I used a static express route to achieve this.
+
+To return the header information in JSON format, I utilized express' `response.json()` method. The request information I pulled straight out of the GET request using a callback method as part of the `.get()` functionality in express.
 
 ---
 
